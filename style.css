@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+section {
+    margin: auto;
+    max-width: 600px;
+    height: 30rem;
+    border: 1px solid black;
+}
+.input{
+    margin: auto;
+    max-width: 400px;
+    height: 14rem;
+    border: 1px solid black;
+}
+.output{
+    margin: auto;
+    max-width: 400px;
+    height: 14rem;
+    border: 1px solid black;
+}
