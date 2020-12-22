@@ -1,16 +1,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 body {
-    margin: 0px;
     padding: 0px;
-    max-height: 100%;
 }
-.navbar{
+.navbartext{
     font-family: 'Nunito', sans-serif;
     text-align: center;
     color: #FEF2F2;
+    font-size: x-large;
+}
+nav{
     margin: auto;
+    height: 6rem;
     max-width: 600px;
     background-color: #A78BFA;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 .container{
     text-align: center;
@@ -31,7 +35,7 @@ body {
 footer{
     margin: auto;
     margin-top: 5rem;
-    height: 13.6rem;
+    height: 14.7rem;
     max-width: 600px;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -43,7 +47,7 @@ footer{
 {
     padding-top: 3rem;
     font-size: x-large;
-    color: #DDD6FE;
+    color:white;
     text-align: center;
 }
 .link{
