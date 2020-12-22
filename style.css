@@ -23,12 +23,15 @@ body {
     border: 1px solid #DDD6FE;
 }
 .btn{
+    color:white;
     margin: 4rem;
-    /* color:  #FEF2F2; */
     background-color: #A78BFA;
 }
+
 footer{
     margin: auto;
+    margin-top: 5rem;
+    height: 13.6rem;
     max-width: 600px;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -38,7 +41,8 @@ footer{
 }
 .footer-header
 {
-    font-size: large;
+    padding-top: 3rem;
+    font-size: x-large;
     color: #DDD6FE;
     text-align: center;
 }
@@ -49,7 +53,7 @@ footer{
     padding: 0.3rem;
 }
 .fab{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 ul{
     padding-inline-start: 0px;
@@ -58,5 +62,4 @@ li{
     padding: 0.5rem;
     display: inline;
 }
-
 
