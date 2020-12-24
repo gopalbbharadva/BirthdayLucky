@@ -27,6 +27,7 @@ function calculate()
 
     t=sum%luckyno.value;
     console.log(t);
+    // console.log(sum);
     if(t==0)
         islucky=true;
     else
