@@ -1,41 +1,22 @@
-var inputDate=document.querySelector("#input");
-var luckyno=document.querySelector("#luckynumber");
-var button=document.querySelector("#processbtn");
-var outputDiv=document.querySelector(".output");
-  
-var t,allsum=0,sum=0,temp,abc=[];
-var islucky=false;
-var success="<h1>Nice!!! Your b'day is lucky.</h1><img src='Images/happy.png'>"
-var failure="<h1>Sorry!! Your b'day is not lucky.</h1><img src='Images/sad.png'>"
+var inputDate = document.querySelector("#input");
+var luckyno = document.querySelector("#luckynumber");
+var button = document.querySelector("#processbtn");
+var outputDiv = document.querySelector(".output");
+var form = document.querySelector("form");
 
-function process(datePart)
-{
-    while(datePart>0)
-    {
-        temp=datePart%10;
-        // var temp2=temp.toString().split(".")[0];
-        sum+=temp;
-        datePart/=10;
-        var datePart=datePart.toString().split(".")[0];
-        // console.log(datePart);
-    }
-}
-function calculate()
-{
-    var input=inputDate.value;    
-    var date=input.split("-").join();
-    console.log(date);
-    for(i=0;i<date.length;i++)  
-        process(date[i]);
+var success = `<h1 style='color:green;'>Nice!!! Your b'day is lucky.</h1><img src='Images/happy.png'>`;
+var failure =
+  "<h1 style='color: red;' >Sorry!! Your b'day is not lucky.</h1><img src='Images/sad.png'>";
 
-    t=sum%luckyno.value;
-    console.log(t);
-    // console.log(sum);
-    if(t==0)
-        outputDiv.innerHTML=success;
-    else
-        outputDiv.innerHTML=failure;
-    // console.log(sum);
-    
-}
-button.addEventListener("click",calculate);
+form.addEventListener("submit", (e) => {
+  var sum = 0;
+  e.preventDefault();
+  var input = inputDate.value;
+  var date = input.split("-").join("");
+
+  for (item of date) {
+    sum += Number(item);
+  }
+  if (sum % luckyno.value === 0) outputDiv.innerHTML = success;
+  else outputDiv.innerHTML = failure;
+});

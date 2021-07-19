@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Birthday</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <nav>
-       <div class="navbartext">Is Your Birthday Lucky?</div>
+      <div class="navbartext">Is Your Birthday Lucky?</div>
     </nav>
     <div class="inputdiv">
-        <input type="date" class="form-control"  id="input"><br>
-        <input type="number" id="luckynumber" class="form-control" maxlength="3" placeholder="Enter Lucky Number:">
-        <button class="btn" id="processbtn">Submit</button>
+      <form >
+        <input type="date" required class="form-control" id="input" /><br />
+        <input
+        required
+          type="number"
+          id="luckynumber"
+          class="form-control"
+          maxlength="3"
+          placeholder="Enter Lucky Number:"
+        />
+        <button type="submit" class="btn" id="processbtn">Submit</button>
+      </form>
     </div>
-    
-    <div class="output" >
-        <h1>Waiting</h1>
-        <img src="Images/waiting.png" alt="" class="src">
+
+    <div class="output">
+      <h1 style="color: orange">Waiting</h1>
+      <img src="Images/waiting.png" alt="" class="src" />
     </div>
     <footer>
-        <div class="footer-header">Connect with me</div>
-        <ul  class="social-links"><br>
-            <li class="list-item"><a class="link" href="https://github.com/gopalbbharadva"><i class="fab fa-github"></i></a></li>
-            <li class="list-item"><a class="link" href="https://www.linkedin.com/in/gopal-bharadva-1aa880176/"><i class="fab fa-linkedin"></i></a></li>
-            <li class="list-item"><a class="link" href="https://www.instagram.com/gopal_33_gb/"><i class="fab fa-instagram"></i></a></li>
-        </ul>
+      <div class="footer-header">Connect with me</div>
+      <ul class="social-links">
+        <br />
+        <li class="list-item">
+          <a class="link" href="https://github.com/gopalbbharadva"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="list-item">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/gopal-bharadva-1aa880176/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="https://www.instagram.com/gopal_33_gb/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
     </footer>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
