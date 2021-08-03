@@ -116,7 +116,9 @@ form{
     align-items: center;
 }
 input{
+    border:2px solid  rgba(0, 0, 0, 0.4);
     padding: 0.5rem;
+    border-radius: 5px;
     margin: 0.5rem;
     width: 100%;
 }
