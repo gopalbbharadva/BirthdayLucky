@@ -17,6 +17,8 @@ form.addEventListener("submit", (e) => {
   for (item of date) {
     sum += Number(item);
   }
-  if (sum % luckyno.value === 0) outputDiv.innerHTML = success;
-  else outputDiv.innerHTML = failure;
+  if (luckyno.value >= 0) {
+    if (sum % luckyno.value === 0) outputDiv.innerHTML = success;
+    else outputDiv.innerHTML = failure;
+  } else alert("Lucky number should be positive or 0.");
 });
